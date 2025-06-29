@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: rgb(100, 42, 42);
+}
+
+.nav-container {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.nav1 {
+  padding: 10px;
+  /* border: 1px solid red; */
+  /* position: relative; */
+  background-color: #5c6166;
+}
+
+.nav1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav1 li {
+  display: inline;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  position: relative;
+  /* background-color: orangered; */
+}
+
+.nav1 .login-btn {
+  background-color: #254bf6;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav1 a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #0a65c7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav1 a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav2 {
+  /* border: 2px solid red; */
+  padding: 20px;
+  background-color: #8197ac;
+  width: 200px;
+  /* text-align: center; */
+}
+
+.nav2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav2 li {
+  margin-bottom: 12px;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav2 a:hover {
+  background-color: #c28585;
+}
+
+.nav2 .login-btn {
+  background-color: rgb(37, 75, 246);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  /* margin-left: 10px; */
+}
+
+.nav2 .login-btn:hover {
+  background-color: rgb(27, 48, 145);
+  border: 1px solid white;
+}
+
+.nav3 {
+  background-color: #84cde4;
+  padding: 10px;
+}
+
+.nav3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav3 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.nav3 .dropdown-content {
+  display: none;
+}
+
+.nav3 .dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #3e3e3e;
+  min-width: 150px;
+}
+
+.nav3 .login-btn {
+  background-color: rgb(37, 75, 246);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  /* margin-left: 10px; */
+}
+
+.nav3 .login-btn:hover {
+  background-color: rgb(27, 48, 145);
+  border: 1px solid white;
+  border-radius: 3px;
+}
