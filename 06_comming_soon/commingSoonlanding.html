@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 98vh;
+      }
+      .container {
+        display: flex;
+        align-items: flex-start;
+        height: 90vh;
+        padding: 20px;
+        margin: 0;
+      }
+      .left-box {
+        margin: 0;
+        background: linear-gradient(45deg, #ff6b6b, #ffe66d);
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .right-box {
+        width: 50%;
+        padding: 10px;
+        height: inherit;
+        align-items: center;
+      }
+      .right-form {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .right-form input {
+        width: 100%;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border: none;
+        border-bottom: 2px solid #eee;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      .right-form input:focus {
+        border-bottom-color: #ff6b6b;
+      }
+
+      .right-form button {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        background: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.3s;
+      }
+
+      .split-form button:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+    <title>Chai with Biskits</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-box">
+        <div class="message">
+          <h2 class="welcom">Welcome Back!</h2>
+          <p class="text-content">Enter your details to access your account</p>
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="right-form">
+          <h2 class="signin">Sign In</h2>
+          <form action="">
+            <input
+              type="email"
+              name="Email"
+              id="emailId"
+              class="emial"
+              placeholder="Email"
+            />
+            <input
+              type="password"
+              name="password"
+              id="passwordId"
+              placeholder="Password"
+            />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
